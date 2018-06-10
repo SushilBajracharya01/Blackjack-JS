@@ -1,0 +1,396 @@
+@keyframes example {
+    from {width: 0px;}
+    to {width: 81px;}
+}
+
+@keyframes grow {
+    from {font-size: 25px;}
+    to {font-size: 35px;}
+}
+
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block; 
+}
+
+button{
+    margin: 2px;
+    width: 25%;
+    border-radius: 10px;
+    float: left;
+    border: 4px solid black;   
+    cursor: pointer;
+    background: gold;
+    color: black;   
+    height: 60px;
+    font-size: 35px;
+    font-family: fantasy;
+}
+
+.btns :hover{
+    color: rgb(180, 0, 0);
+    background: yellow;  
+    box-shadow: 0 0 60px 10px gold;
+
+}
+
+.btns{
+    position: fixed;
+    justify-content: center;
+    display: flex;
+    left: 33%;
+    top: 64%;
+    width: 35%;
+}
+
+
+.startBtn{
+    position:fixed;
+    left: 40%;
+    top: 64%;
+}
+
+.startBtn:hover {
+    background: yellow;
+    color: rgb(180, 0, 0);
+    box-shadow: 0 0 60px 10px gold;
+
+}
+
+body{
+    background: radial-gradient(circle,rgb(180, 0, 0), rgb(20, 5, 5));
+    height: 650px;
+    user-select: none;
+}
+.cards{
+    height: 117px;
+    width: 81px;
+    border: 2px solid black;
+    border-radius: 9px;
+    float: left;
+    margin: 2px;
+    background-image: url(Cards.gif);
+    animation-name: example; 
+    animation-duration: .5s;
+}
+
+.cardDisplay{
+    width: 55%;
+    height: 22%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background: radial-gradient(circle, rgb(153, 0, 0), rgb(53, 0, 0));
+    border-radius: 30px;
+    position: fixed;
+    left: 22%;
+    border: solid 8px rgb(112, 0, 30);
+}
+
+.playerDisplay{
+    top: 75%;
+}
+
+.status{
+    width: 99%;
+    height: 20%;
+    background: rgba(255,200,255,30%);
+    position: fixed;
+    top: 35%;  
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-family: fantasy;
+    animation: grow 1s;
+    font-size: 45px;
+}
+
+.winanimation{
+    animation: dropdown 2s;
+}
+.loseanimation{
+    animation: goup 2s;
+}
+
+.loseDecor{
+    color: indigo;
+    text-shadow: 3px 4px red;
+}
+
+.winDecor{
+    color: yellow;
+    text-shadow: 3px 4px black;
+}
+
+.scoreplace{
+    position: fixed;
+    left: 68%;
+    width: 8%;
+    height: 5%;
+    background: rgba(0,0,0,50%);
+    color: white;
+    text-shadow: 3px 4px black;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+    font-size: 25px;
+    font-family: fantasy;
+    border-radius: 15px;
+    
+}
+
+.playerscore{
+    top: 65%;
+}
+
+.dealerscore{
+    top: 23%;   
+}
+
+.cashplace{
+    position: fixed;
+    left: 26%;
+    width: 8%;
+    height: 4%;
+    background: rgba(0,0,0,50%);
+    color: yellow;
+    text-shadow: 3px 4px black;
+    padding: 1% ;
+    text-align: center;
+    font-size: 25px;
+    font-family: fantasy;
+    border-radius: 15px;
+    
+}
+
+.playercash{
+    top: 61%;
+}
+
+.dealercash{
+    top: 23%;   
+}
+
+.bettingbox{
+    width: 50%;
+    height: 80%;
+    position: fixed;
+    top: 10%;
+    left: 25%;
+    background: radial-gradient(circle, rgb(153, 0, 0), rgb(53, 0, 0));
+    border-radius: 30px;
+    border: solid 8px rgb(112, 0, 30);
+    
+}
+
+#heading{
+    position: fixed;
+    top: 15%;
+    left: 41%;
+    text-shadow: 4px 6px black;
+    font-size: 250%;
+    font-family: fantasy;
+    color: gold;
+}
+
+.bets{
+    align-content: center;
+    display: flex;
+    position: fixed;
+    top: 28%;
+    width: 50%;
+    height: 20%;
+}
+
+.betshape{
+    width: 140px;
+    height: 140px;
+    border-radius: 90px;
+    position: fixed;
+    border: 20px dashed;
+    color: white;
+    
+}
+
+.bet-10button{
+    border-color:#ffffff ;
+    background-color: #1ABAEE;
+    left: 30%;
+}
+.bet-10button:hover {
+    box-shadow:
+        0 0 60px 10px #0ff;
+}
+.bet-25button{;
+    border-color:#000 ;
+    background-color: #203482;
+    left: 46%;
+}
+.bet-25button:hover {
+    box-shadow:
+        0 0 90px 30px rgb(77, 110, 255);
+}
+
+.bet-50button{    
+    border-color:#000;
+    background-color: #FBCE5A;
+    left: 61%;
+}
+
+.bet-50button:hover {
+    box-shadow:
+        0 0 60px 20px gold,
+        0 0 100px 30px yellow;
+}
+
+#betValueSpan{
+    position: fixed;
+    top: 53%;
+    left: 45%;
+    text-shadow: 4px 6px black;
+    font-size: 250%;
+    font-family: fantasy;
+    color: gold;
+    
+}
+
+#bet-button{
+    position: fixed;
+    font-size: 290%;
+    top: 65%;
+    left: 46%;
+    width: 160px;
+    height: 160px;
+    border:15px solid dimgrey;
+    border-radius: 120px;
+    color: ghostwhite;
+    background: royalblue;
+}
+#bet-button:hover {
+        box-shadow: 
+        0 0 14px 2px white,
+        0 0 90px 30px royalblue;
+
+    
+}
+
+.gloweffect{
+    box-shadow: 
+        0 0 80px 20px gold;
+}
+#yourCash{
+    font-size: 150%;
+    font-family: fantasy;
+    color: forestgreen;
+    position: fixed;
+    text-shadow: 2px 0px black;
+    top: 55%;
+    left: 27%;
+}
+
+.Bet{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 70px;
+    border:15px dashed;
+    font-size: 300%;
+    font-family: fantasy;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 105px;
+    
+}
+
+.playerBet{
+    left: 49%;
+    margin-top:-2%
+    
+}
+.dealerBet{
+    left: 46%;
+}
+
+.bet50{
+    border-color: #000;
+    background-color: #FBCE5A;
+}
+
+.bet25{
+    border-color: #000;
+    background-color: #203482;
+}
+
+.bet10{
+    border-color: #fff;
+    background-color: #1ABAEE;
+}
+
+@keyframes playerbeting{
+    from{
+        opacity: 0;
+        top: 48%;
+    }
+    to{
+        opacity: 1;
+        top: 28%;
+        
+    }
+}
+@keyframes dealerbeting{
+    from{
+        opacity: 0;
+        top: 17%;
+    }
+    to{
+        opacity: 1;
+        top: 37%;
+        
+    }
+}
+.playerbetanimation{
+    animation: playerbeting 2s;
+    top: 28%;
+}
+
+.dealerbetanimation{
+    animation: dealerbeting 2s;
+    top: 37%;
+}
+
+@keyframes lost{
+    from{
+        top: 28%;
+        opacity: 1;
+    }
+    to{
+        top: 8%;
+        opacity: 0;
+    }
+}
+@keyframes won{
+    from{
+        top: 37%;
+        opacity: 1;
+    }
+    to{
+        top: 67%;
+        opacity: 0;
+    }
+}
+.lostanimation{
+    animation: lost 2s;
+    opacity: 0;
+}
+.wonanimation{
+    animation: won 2s;
+    opacity: 0;
+}
+.updategrowcash{
+    animation: grow 2s;
+}

@@ -1,0 +1,57 @@
+<!doctype html>
+    
+    <head>
+        <title>BlackJack</title>
+        <link rel = "stylesheet" href="blackjack.css"/>
+        <meta name = "viewport" content="width = device-width, initial-scale= 1.0">
+    </head>
+    
+    
+    <body> 
+            <button  id = "new-game-button" class ="startBtn" >Start Game!</button>
+        
+        <!--Dealer Section-->
+        <p id="Dealerscore" class="dealerscore scoreplace"></p>
+        <p id="Dealercash" class="dealercash cashplace"></p>
+        <div class ="cardDisplay dealerDisplay" id = "dealerBox"></div>
+        
+        <!--Status section-->
+        <div class = " " id ="status" ></div>
+        
+        <!--Player Section-->
+        <div class= "btns">
+            <button id = "hit-button" class='hide'>Hit</button>
+            <button id = "stay-button" class='hide'>Stay</button>
+            <!--<button id = "bet-button" class='hide'>Bet</button>-->
+        </div>
+        <p id="Playerscore" class = "playerscore scoreplace"></p>
+        <div class ="cardDisplay playerDisplay" id = "playerBox"></div>
+        
+        
+        <!--table bet-->
+        <div id = "dealerBet" class="dealerBet Bet hide"></div>
+        <div id = "playerBet" class="playerBet Bet hide"></div>
+        
+        <!--beting box-->
+        <div id = "betBox" class = "bettingbox hide">
+            <span id = "heading">Place your Bet</span>
+            
+            <div class ="bets ">
+                <button class = "bet-10button betshape" id = 'bet10btn' >$ 10</button>
+                <button class = "bet-25button betshape" id = 'bet25btn' >$ 25</button>
+                <button class = "bet-50button betshape" id = 'bet50btn' >$ 50</button>
+            </div>
+            
+            
+            <button id = "bet-button" class='hide ' onclick= "betting()" >Bet</button>
+            <p id ="yourCash">your cash</p>
+            <span id = "betValueSpan"></span>
+        
+        </div>
+      
+        
+        <p id="Playercash" class = "playercash cashplace"></p>
+        
+        
+        <script src= "blackjack.js"></script>
+    </body>
