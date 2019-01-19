@@ -200,8 +200,7 @@ function serveCards(){
     dealerBox.appendChild(backCard());
     
     displayCards(player1Cards);
-    //displayCards(dealerCards);
-    
+
     bust();
 }
 function backCard(){
@@ -270,11 +269,7 @@ function getCardString(card){
 function getHandSum(cards){
     let sum = 0;
     for(let i =0; i < cards.length; i++){
-//          Aces contributes 1 or 11 to sum depending on which benefits us most
-//
-//        if (cards[i].Value === 'Ace' && sum + 10 <= 21){
-//            sum += 10;
-//        }
+
         
         if ( cards[i].Value === 'Ace' ){
             
@@ -403,7 +398,6 @@ function bust(){
     updatePlayerScore(myHandSum);
     if(myHandSum>21){
         writeStatus(loosePhrase);
-//        tableBetPlace.classList.add('loseanimation');
         updateDealerScore(getHandSum(dealerCards));
         endGame();
         lostRound();
@@ -477,8 +471,6 @@ function stayWithMyHand(){
             if(dealerScore > 21 ){
                 writeStatus(winPhrase);
                 skipFlag = 1;
-//                tableBetPlace.classList.add('winanimation');
-//                betValueplace.classList.remove("tableBetSpan");
                 endGame();
                 updateDealerScore(dealerScore);
                 wonRound();
@@ -541,4 +533,3 @@ function writeStatus(winLossString){
     }
     statusParagraph.innerHTML = winLossString;
 }
-//////////////////////////^^^     SAFE ZONE   ^^^///////////////////////////////////////////
